@@ -5,7 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apexiol Digital — Marketing Agency</title>
 
+<!-- GOOGLE FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- META PIXEL CODE -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1328243775991571');
+fbq('track', 'PageView');
+</script>
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1328243775991571&ev=PageView&noscript=1"/>
+</noscript>
+<!-- END META PIXEL CODE -->
 
 <style>
 :root {
@@ -18,40 +38,36 @@
   --border:#ddd;
 }
 
-/* RESET */
 *{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif;}
 html{scroll-behavior:smooth;}
 body{background:var(--bg-color);color:var(--text-dark);}
 a{text-decoration:none;color:inherit;}
 
-/* SECTIONS – spacing reduced */
 section{
   padding:55px 20px;
   max-width:1200px;
   margin:auto;
 }
 
-/* NAVIGATION */
+/* NAV */
 nav{
   position:fixed;
-  width:100%;
   top:0;
-  z-index:1000;
-  background:rgba(255,255,255,0.95);
-  backdrop-filter:blur(10px);
+  width:100%;
+  background:#fff;
   border-bottom:1px solid var(--border);
+  z-index:100;
 }
 .nav-container{
   max-width:1200px;
   margin:auto;
-  padding:14px 20px;
   display:flex;
   justify-content:space-between;
   align-items:center;
+  padding:16px 20px;
 }
-.brand{font-weight:800;font-size:24px;color:var(--accent);}
-.nav-links a{margin-left:24px;font-size:14px;color:var(--text-muted);}
-.nav-links a:hover{color:var(--highlight);}
+.brand{font-weight:800;font-size:22px;color:var(--accent);}
+.nav-links a{margin-left:20px;font-weight:500;}
 
 /* HERO */
 .hero{
@@ -63,14 +79,13 @@ nav{
 }
 .hero-text h1{font-size:52px;line-height:1.1;}
 .hero-text h1 span{color:var(--highlight);}
-.hero-text p{margin-top:20px;font-size:17px;color:var(--text-muted);}
+.hero-text p{margin:20px 0;color:var(--text-muted);}
 .hero-cta{
-  margin-top:30px;
   display:inline-block;
-  padding:14px 40px;
-  border-radius:40px;
+  padding:14px 28px;
   background:var(--accent);
   color:#fff;
+  border-radius:30px;
   font-weight:600;
 }
 
@@ -78,7 +93,7 @@ nav{
 .section-title{text-align:center;margin-bottom:30px;}
 .section-title h2{font-size:36px;}
 .section-title span{color:var(--highlight);}
-.section-title p{margin-top:0px;color:var(--text-muted);max-width:600px;margin:auto;}
+.section-title p{color:var(--text-muted);max-width:600px;margin:auto;}
 
 /* SERVICES */
 .services{
@@ -155,7 +170,6 @@ footer{
 
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-container">
     <div class="brand">APEXIOL</div>
@@ -168,7 +182,6 @@ footer{
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
   <div class="hero-text">
     <h1>Grow Your Brand with <span>Clarity</span></h1>
@@ -177,49 +190,40 @@ footer{
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
   <div class="section-title">
     <h2>Our <span>Services</span></h2>
     <p>Complete marketing solutions to grow your brand strategically.</p>
   </div>
-
   <div class="services">
-    <div class="service-card"><h3>Digital Strategy</h3><p>Personalized marketing plans based on your brand and objectives.</p></div>
-    <div class="service-card"><h3>Social Media</h3><p>Engaging content to strengthen your brand voice.</p></div>
-    <div class="service-card"><h3>Paid Advertising</h3><p>Optimized campaigns with measurable ROI.</p></div>
-    <div class="service-card"><h3>Brand Positioning</h3><p>Clear identity and strong market presence.</p></div>
-    <div class="service-card"><h3>Content Marketing</h3><p>High-quality content that converts.</p></div>
-    <div class="service-card"><h3>SEO & Analytics</h3><p>Track performance and grow consistently.</p></div>
+    <div class="service-card"><h3>Digital Strategy</h3><p>Personalized marketing plans.</p></div>
+    <div class="service-card"><h3>Social Media</h3><p>Engaging content.</p></div>
+    <div class="service-card"><h3>Paid Advertising</h3><p>Optimized campaigns.</p></div>
+    <div class="service-card"><h3>Brand Positioning</h3><p>Strong identity.</p></div>
+    <div class="service-card"><h3>Content Marketing</h3><p>High-quality content.</p></div>
+    <div class="service-card"><h3>SEO & Analytics</h3><p>Performance tracking.</p></div>
   </div>
 </section>
 
-<!-- PROCESS -->
 <section id="process">
-  <div class="section-title">
-    <h2>Our <span>Process</span></h2>
-  </div>
-
+  <div class="section-title"><h2>Our <span>Process</span></h2></div>
   <div class="process">
-    <div class="step"><h4>01. Discover</h4><p>Understand your business and audience.</p></div>
-    <div class="step"><h4>02. Plan</h4><p>Create clear strategies and goals.</p></div>
-    <div class="step"><h4>03. Execute</h4><p>Run campaigns with consistency.</p></div>
-    <div class="step"><h4>04. Optimize</h4><p>Improve continuously for better ROI.</p></div>
+    <div class="step"><h4>01. Discover</h4></div>
+    <div class="step"><h4>02. Plan</h4></div>
+    <div class="step"><h4>03. Execute</h4></div>
+    <div class="step"><h4>04. Optimize</h4></div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="about">
   <h2>About <span>Apexiol Digital</span></h2>
-  <p>A modern marketing agency focused on clarity, strategy, and measurable results.</p>
+  <p>A modern marketing agency focused on clarity and measurable results.</p>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact">
   <h2>Connect With Us</h2>
   <p>Email: apexioldigital@gmail.com</p>
   <p>Phone: +92 311 0728099</p>
-
   <div class="socials">
     <a href="https://www.instagram.com/apexiol_digital" target="_blank">Instagram</a>
     <a href="https://www.facebook.com/profile.php?id=61584178626695" target="_blank">Facebook</a>
